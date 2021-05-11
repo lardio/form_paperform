@@ -1,20 +1,37 @@
-<div data-paperform-id="n6s8ssiy" onsubmit="myGlobalFunctionName" onpagechange="myGlobal2FunctionName"></div>
-<script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+    #form_test > iframe{
+        min-width: 100%;
+        min-height: 400px;
+    }
+</style>
+</head>
+<body>
 
+    <div data-paperform-id="n6s8ssiy" onsubmit="myGlobalFunctionName" onpagechange="myGlobal2FunctionName" id="form_test">
+    </div>
+
+<script>
     (function() {
         var script = document.createElement('script'); 
         script.src = "https://paperform.co/__embed.min.js"; 
         document.body.appendChild(script); }
     )();
-
+    
     function myGlobalFunctionName(datas) {
-    console.log(datas.data); //liste des réponses données
-    }
-
+        console.log(datas.data);} //liste des réponses données}
+    
     function myGlobal2FunctionName(datas) {
-        console.log(datas); //page en cours avec id du form
-    }
-
+        console.log(datas);} //page en cours avec id du form
 </script>
+</body>
+</html>
+
 
 
