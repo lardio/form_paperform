@@ -1,0 +1,20 @@
+<div data-paperform-id="n6s8ssiy" onsubmit="myGlobalFunctionName" onpagechange="myGlobal2FunctionName"></div>
+<script>
+
+    (function() {
+        var script = document.createElement('script'); 
+        script.src = "https://paperform.co/__embed.min.js"; 
+        document.body.appendChild(script); }
+    )();
+
+    function myGlobalFunctionName(datas) {
+    console.log(datas.data); //liste des réponses données
+    }
+
+    function myGlobal2FunctionName(datas) {
+        console.log(datas); //page en cours avec id du form
+    }
+
+</script>
+
+
